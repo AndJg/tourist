@@ -1,0 +1,32 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    background: var(--primary-color);
+    height: 5rem;
+
+    &__logo {
+        margin: 1.3rem 0 0 0;
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+    }
+
+    &__item {
+        margin: 1.875rem 3rem 0 0;
+        text-transform: uppercase;
+    }
+
+    a:link,
+    a:visited {
+        color: var(--font-color2);
+        text-decoration: none;
+    }
+    a:hover,
+    a:active {
+        border-bottom: solid #ffffff 2px;
+    }
+}
