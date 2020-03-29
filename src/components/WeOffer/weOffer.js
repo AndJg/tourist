@@ -1,13 +1,16 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
-const Offer = () => {
+import OfferSlider from './offerSlider';
+import './weOffer.scss';
+
+const weOffer = () => {
     return (
-        <Fragment>
+        <div className="offer-container">
             <h3>We Offer</h3>
             <h2>Popular Tour Package</h2>
-            {/* slider */}
-        </Fragment>
+            <OfferSlider />
+        </div>
     );
 };
 
-export default Offer;
+export default weOffer;

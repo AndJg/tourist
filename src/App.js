@@ -6,6 +6,7 @@ import HeroSection from './components/HeroSection/HeroSection';
 import Navbar from './components/Navbar/Navbar';
 import Services from './components/Services/Services';
 import Video from './components/videoSection/Video';
+import WeOffer from './components/WeOffer/weOffer';
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
                 </Switch>
                 <Services />
                 <Video />
+                <WeOffer />
             </Fragment>
         </Router>
     );
