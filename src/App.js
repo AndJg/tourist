@@ -7,6 +7,8 @@ import Navbar from './components/Navbar/Navbar';
 import Services from './components/Services/Services';
 import Video from './components/videoSection/Video';
 import WeOffer from './components/WeOffer/weOffer';
+import Off from './components/Off/Off';
+import Testimonials from './components/Testimonials/Testimonials';
 
 function App() {
     return (
@@ -25,6 +27,8 @@ function App() {
                 <Services />
                 <Video />
                 <WeOffer />
+                <Off />
+                <Testimonials />
             </Fragment>
         </Router>
     );

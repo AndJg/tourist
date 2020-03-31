@@ -6,15 +6,14 @@ import Star from '../../img/offer/Star.png';
 import Attractions from '../../img/offer/attractions.png';
 import Earth from '../../img/offer/earth.png';
 import Capa from '../../img/offer/capa.png';
-
+import Heading from '../Heading';
 const Video = () => {
     return (
         <Fragment>
             <div className="container-video">
                 <div class="container-video__overlay"></div>
                 <div class="container-video__content">
-                    <h3>Discover</h3>
-                    <h2>Watch Our Video Tour</h2>
+                    <Heading small="Discover" bigger="Watch Our Video Tour" />
                 </div>
                 <div className="container-video__videoitem">
                     <iframe src="" frameborder="0" width="663" height="314"></iframe>

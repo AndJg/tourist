@@ -1,13 +1,14 @@
 import React from 'react';
 
-import OfferSlider from './offerSlider';
+import OfferSlider from './OfferSlider';
 import './weOffer.scss';
+
+import Heading from '../Heading';
 
 const weOffer = () => {
     return (
         <div className="offer-container">
-            <h3>We Offer</h3>
-            <h2>Popular Tour Package</h2>
+            <Heading small="we offer" bigger="Popular Tour Package" />
             <OfferSlider />
         </div>
     );
