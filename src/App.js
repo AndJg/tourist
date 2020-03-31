@@ -9,6 +9,7 @@ import Video from './components/videoSection/Video';
 import WeOffer from './components/WeOffer/weOffer';
 import Off from './components/Off/Off';
 import Testimonials from './components/Testimonials/Testimonials';
+import Destinations from './components/Destination/Destinations';
 
 function App() {
     return (
@@ -29,6 +30,7 @@ function App() {
                 <WeOffer />
                 <Off />
                 <Testimonials />
+                <Destinations />
             </Fragment>
         </Router>
     );

@@ -11,12 +11,12 @@ const Video = () => {
     return (
         <Fragment>
             <div className="container-video">
-                <div class="container-video__overlay"></div>
-                <div class="container-video__content">
+                <div className="container-video__overlay"></div>
+                <div className="container-video__content">
                     <Heading small="Discover" bigger="Watch Our Video Tour" />
                 </div>
                 <div className="container-video__videoitem">
-                    <iframe src="" frameborder="0" width="663" height="314"></iframe>
+                    <iframe src="" frameBorder="0" width="663" height="314"></iframe>
                 </div>
             </div>
             <div className="achivments">

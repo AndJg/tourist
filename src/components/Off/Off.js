@@ -14,7 +14,7 @@ const Off = () => {
                     <button className="btn-subscribe">Subscribe</button>
                 </div>
             </div>
-            <div class="container-off__overlay"></div>
+            <div className="container-off__overlay"></div>
         </div>
     );
 };

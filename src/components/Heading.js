@@ -18,6 +18,7 @@ const Heading = ({ small, bigger }) => {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
+        marginTop: 3.813 + 'rem',
     };
 
     return (
