@@ -4,10 +4,13 @@ import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 
 import Images from './Images';
 import BG from '../../img/BG.png';
+import BG2 from '../../img/BG2.jpg';
+import BG3 from '../../img/BG3.jpeg';
+import BG4 from '../../img/BG4.jpeg';
 import './Slider.scss';
 
 const Slider = () => {
-    let sliderArray = [<Images src={BG} />, 2, 3, 4];
+    let sliderArray = [<Images src={BG} />, <Images src={BG2} />, <Images src={BG3} />, <Images src={BG4} />];
     const [x, setX] = useState(0);
     const goLeft = () => {
         x === 0 ? setX(-100 * (sliderArray.length - 1)) : setX(x + 100);
