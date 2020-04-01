@@ -1,4 +1,4 @@
-##LANDING PAGE
+## LANDING PAGE
 
 Simple landing page project coded from adobe xD Design.
 
