@@ -1,6 +1,7 @@
+@import '../../mixins.scss';
+
 .slider {
     width: 100%;
-    height: 100vh;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -8,7 +9,7 @@
 
 .slide {
     min-width: 100%;
-    height: 100vh;
+    height: 40.625rem;
     overflow: hidden;
 }
 
@@ -20,6 +21,9 @@
     height: 2.063rem;
     transition: 0.5s;
     margin: 0 2rem 0 2rem;
+    @include breakpoint(xs) {
+        visibility: hidden;
+    }
 }
 
 .btnLeft {
@@ -36,21 +40,30 @@
     justify-self: center;
     z-index: 7;
 }
-.centerContainer {
+.container-center {
     width: 100%;
     display: flex;
     justify-content: center;
+    @include breakpoint(md) {
+        top: 104px;
+        align-items: center;
+    }
 }
-.centerText {
+.center-text {
     color: #fff;
     position: absolute;
     font-size: 2.5rem;
-    top: 275px;
+    top: 160px;
+
+    @include breakpoint(xs) {
+        font-size: 1.125rem;
+        top: 80px;
+    }
     h1 {
         text-align: center;
     }
     p {
-        margin-top: 2rem;
+        margin: 2rem 0 0 0;
         text-align: center;
     }
 }

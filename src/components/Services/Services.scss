@@ -1,6 +1,11 @@
+@import '../../mixins.scss';
+
 .services {
     display: flex;
     justify-content: center;
+    @include breakpoint(xs) {
+        margin: -16rem 0 1rem 0;
+    }
 }
 
 .container {
@@ -9,8 +14,12 @@
     justify-content: space-between;
     width: 70vw;
     height: 95%;
-    margin-top: 100px;
-    margin-bottom: 200px;
+    margin: 4.688rem 0 2.5rem 0;
+    @include breakpoint(xs) {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 0 0;
+    }
 }
 
 .rightColumn {
@@ -20,6 +29,9 @@
     grid-column-gap: 1.5rem;
     grid-row-gap: 1.4rem;
     margin: 0 0 0 0;
+    @include breakpoint(xs) {
+        grid-template-columns: 1fr;
+    }
 
     &__box {
         height: 16.75rem;

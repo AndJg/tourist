@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import CountUp from 'react-countup';
 
 import './Video.scss';
 import Achivment from './Achivment';
@@ -16,32 +17,44 @@ const Video = () => {
                     <Heading small="Discover" bigger="Watch Our Video Tour" />
                 </div>
                 <div className="container-video__videoitem">
-                    <iframe src="" frameBorder="0" width="663" height="314"></iframe>
+                    <iframe
+                        src="https://www.youtube.com/watch?v=GTRQsa3jpXU"
+                        frameBorder="0"
+                        className="video-frame"
+                    ></iframe>
                 </div>
             </div>
             <div className="achivments">
                 <div className="achivments__icon">
-                    <Achivment src={Star} />
-                    <h4>120,895</h4>
-                    <p>happy travelers</p>
+                    <Achivment
+                        src={Star}
+                        count={<CountUp start={100} end={120859} duration={5} delay={5} />}
+                        title="Happy Travelers"
+                    />
                 </div>
                 <div className="achivments__icon">
                     {' '}
-                    <Achivment src={Attractions} />
-                    <h4>2594</h4>
-                    <p>satisfied tours</p>
+                    <Achivment
+                        src={Attractions}
+                        count={<CountUp start={10} end={845} duration={5} delay={10} />}
+                        title="Satisfied Tourist"
+                    />
                 </div>
                 <div className="achivments__icon">
                     {' '}
-                    <Achivment src={Earth} />
-                    <h4>854</h4>
-                    <p>destination</p>
+                    <Achivment
+                        src={Earth}
+                        count={<CountUp start={10} end={854} duration={5} delay={15} />}
+                        title="Destinations"
+                    />
                 </div>
                 <div className="achivments__icon">
                     {' '}
-                    <Achivment src={Capa} />
-                    <h4>978</h4>
-                    <p>hotel resorts</p>
+                    <Achivment
+                        src={Capa}
+                        count={<CountUp start={10} end={978} duration={5} delay={20} />}
+                        title="Hotel Resorts"
+                    />
                 </div>
             </div>
         </Fragment>

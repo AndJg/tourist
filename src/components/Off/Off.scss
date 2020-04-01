@@ -49,6 +49,9 @@
         padding: 0.5rem;
         color: #fff;
         @include horizontal-gradient(var(--gradient-color), var(--gradient-color2));
+        @include breakpoint(xs) {
+            width: 16rem;
+        }
         margin: 0 1.2rem 0 0;
     }
 

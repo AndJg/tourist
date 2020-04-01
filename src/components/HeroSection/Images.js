@@ -9,8 +9,8 @@ const Images = ({ src }) => {
     return (
         <Fragment>
             <img src={src} alt="slide-image" style={imgStyle}></img>
-            <div className="centerContainer">
-                <div className="centerText">
+            <div className="container-center">
+                <div className="center-text">
                     {' '}
                     <h1>Discover Greece</h1>
                     <p>Travel with unique experince</p>

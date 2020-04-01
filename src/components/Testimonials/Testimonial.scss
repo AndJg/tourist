@@ -1,3 +1,5 @@
+@import '../../mixins.scss';
+
 .container-testimonials {
     margin: 4.188rem 0 0 0;
 }
@@ -6,6 +8,9 @@
     display: flex;
     justify-content: center;
     margin: 5.85rem 0 0 0;
+    @include breakpoint(xs) {
+        align-items: center;
+    }
 }
 
 .container-testimonial {
@@ -16,4 +21,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include breakpoint(xs) {
+        margin: 0 0 0 0;
+    }
 }

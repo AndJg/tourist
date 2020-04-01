@@ -10,6 +10,7 @@ import WeOffer from './components/WeOffer/weOffer';
 import Off from './components/Off/Off';
 import Testimonials from './components/Testimonials/Testimonials';
 import Destinations from './components/Destination/Destinations';
+import Footer from './components/Footer/Footer';
 
 function App() {
     return (
@@ -31,6 +32,7 @@ function App() {
                 <Off />
                 <Testimonials />
                 <Destinations />
+                <Footer />
             </Fragment>
         </Router>
     );

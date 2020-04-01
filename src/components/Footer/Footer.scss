@@ -1,0 +1,46 @@
+@import '../../mixins.scss';
+
+.container-footer {
+    display: flex;
+    justify-content: space-around;
+    background: var(--footer-background);
+    color: var(--font-color2);
+    @include breakpoint(xs) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__left {
+        display: flex;
+        margin: 2rem 0 0 0;
+        @include breakpoint(xs) {
+            flex-direction: column;
+        }
+    }
+    &__right {
+        margin: 1rem 0 8rem 0;
+    }
+    &__right > p {
+        @include breakpoint(xs) {
+            text-align: center;
+        }
+    }
+
+    input[type='email'] {
+        width: 17.813rem;
+        height: 2.938rem;
+    }
+
+    &__btn {
+        height: 2.938rem;
+        width: 3.641rem;
+        @include horizontal-gradient(var(--gradient-color), var(--gradient-color2));
+        border: none;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.email {
+    display: flex;
+}

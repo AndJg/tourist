@@ -1,3 +1,5 @@
+@import '../../mixins.scss';
+
 .container-video {
     width: 100%;
     height: 100%;
@@ -39,14 +41,26 @@
     }
 }
 
+.video-frame {
+    width: 41.438rem;
+    height: 19.625rem;
+    @include breakpoint(xs) {
+        width: 25rem;
+    }
+}
+
 .achivments {
     display: flex;
     justify-content: center;
+    @include breakpoint(xs) {
+        flex-direction: column;
+    }
 
     &__icon {
         display: flex;
         flex-direction: column;
         height: 10rem;
         margin: 5rem 4rem 0 4rem;
+        text-align: center;
     }
 }
