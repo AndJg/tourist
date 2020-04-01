@@ -22,9 +22,9 @@ function App() {
 
                 <Switch>
                     <Route exact path="/home" component={HeroSection} />
-                    {/* <Route exact path="/about" component={ser} /> */}
+                    <Route exact path="/about" component={WeOffer} />
                     <Route exact path="/services" component={Services} />
-                    {/* <Route exact path="/tour" component={tour} /> */}
+                    <Route exact path="/tour" component={Destinations} />
                 </Switch>
                 <Services />
                 <Video />
