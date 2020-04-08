@@ -26,6 +26,7 @@ function App() {
                     <Route exact path="/services" component={Services} />
                     <Route exact path="/tour" component={Destinations} />
                 </Switch>
+                <HeroSection />
                 <Services />
                 <Video />
                 <WeOffer />
